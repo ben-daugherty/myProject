@@ -10,3 +10,13 @@ document.getElementById('add').addEventListener('click', function() {
   }
 
 });
+
+document.getElementById('r').addEventListener('click', function() {
+  let removeValue = document.getElementById('r').value;
+
+
+if (removeValue) {
+  console.log('Remove');
+}
+
+});

@@ -3,7 +3,7 @@
 body {
   background:
   #F5F5F5;
-  padding: 18px 0 0 0;
+  padding: 0;
 }
 
 ul {
@@ -49,39 +49,41 @@ header img {
 
 .main-header {
   width:100%;
-  height:17px;
+
   position:fixed;
   padding:15px;
-  top:0;
-  left:0;
+
   z-index:5;
   box-shadow:0px 2px 4px rgba(60, 95, 136, 0.20);
   background:#E87352;
-  border-bottom-right-radius:10px;
-  border-bottom-top-radius: 10px;
+
   position:fixed;
   z-index:0;
+  box-sizing: border-box;
+
 }
 
   header input {
 
     width: 100%;
     height: 45px;
-    float:left;
+
     color:#E87352;
     font-size:.95em;
     font-weight: bold;
     text-indent:30px;
-    padding:0 60px 0 0;
+
     background: rgba(159,217,237,0.70);
+    box-shadow:0px 2px 4px rgba(60, 95, 136, 0.20);
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding:0 60px 0 0;
+
     border-radius:25px;
     border:8px;
     box-shadow:none:
     outline:none;
+    padding:0;
 
   -webkit-appearance:none;
  -moz-appearance:none;
@@ -113,11 +115,11 @@ header input:-ms-input-placeholder {
 
 
  header button {
-   width:50px;
-   height:50px;
+   width:45px;
+   height:45px;
    position:absolute;
-   top:60px;
-   right:20px;
+   top:65px;
+   right:15px;
    z-index:2;
    border-radius:25px;
    background:#fff;
