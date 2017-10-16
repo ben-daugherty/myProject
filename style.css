@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+body {
+  background:
+  #F5F5F5;
+  padding: 18px 0 0 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+
+  font-weight:bold;
+  text-decoration: none;
+  font-family: 'Droid Sans';
+}
+
+
+/*=============================
+Font Embed
+=============================*/
+
+
+
+
+ body,input,button, .main-nav {
+   font-family: 'Droid Sans', sans-serif;
+ }
+
+header img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+  width:300px;
+  height: 300px;
+
+
+}
+
+
+
+
+
+
+.main-header {
+  width:100%;
+  height:17px;
+  position:fixed;
+  padding:15px;
+  top:0;
+  left:0;
+  z-index:5;
+  box-shadow:0px 2px 4px rgba(60, 95, 136, 0.20);
+  background:#E87352;
+  border-bottom-right-radius:10px;
+  border-bottom-top-radius: 10px;
+  position:fixed;
+  z-index:0;
+}
+
+  header input {
+
+    width: 100%;
+    height: 45px;
+    float:left;
+    color:#E87352;
+    font-size:.95em;
+    font-weight: bold;
+    text-indent:30px;
+    padding:0 60px 0 0;
+    background: rgba(159,217,237,0.70);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 60px 0 0;
+    border-radius:25px;
+    border:8px;
+    box-shadow:none:
+    outline:none;
+
+  -webkit-appearance:none;
+ -moz-appearance:none;
+ -moz-a
+ -o-appearance:none;
+ appearance:none;
+}
+
+/*Input Placeholders */
+
+header input::-webkit-input-placeholder {
+
+  color:rgba(232,115,82,0.50);
+}
+
+header input:-moz-input-placeholder {
+    color:rgba(232,115,82,0.50);
+}
+
+header input::-moz-input-placeholder {
+    color:rgba(232,115,82,0.50);
+}
+
+header input:-ms-input-placeholder {
+    color:rgba(232,115,82,0.50);
+}
+
+
+
+
+ header button {
+   width:50px;
+   height:50px;
+   position:absolute;
+   top:60px;
+   right:20px;
+   z-index:2;
+   border-radius:25px;
+   background:#fff;
+   border:0;
+   outline:none;
+
+   -webkit-appearance:none;
+  -moz-appearance:none;
+  -moz-a
+  -o-appearance:none;
+  appearance:none;
+ }
+
+ /* SVG style header button */
+
+ header button svg {
+   width: 25px;
+   height: 25px;
+   position:absolute;
+   top: 50%
+   left: 50%;
+   margin: -12px 0 0 -12px;
+
+ }
+
+ header button svg .fill {
+   fill: #9FD9ED;
+ }
+
+.main-nav {
+  padding-top:20px;
+  padding: 10px 19px;
+  margin-top:34px;
+
+}
+
+
+.main-nav a {
+	text-align: center;
+	display: block;
+
+	padding: 5px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+	color: #fff;
+}
+
+.copy {
+  text-align: center;
+}
+
+.list {
+  width:50px;
+  height: 50px;
+  margin-left:2px;
+  margin-top:-353px;
+  position:fixed;
+  z-index:5;
+
+}
+
+
+.wrapper {
+width:90%;
+float:left;
+padding:15px;
+
+}
+
+
+ul.bucketlist {
+  width:100%;
+  float:left;
+}
+
+ul.bucketlist li {
+  width:100%;
+  height:40px;
+  float:left;
+  font-size:18px;
+  font-weight:bold;
+  color:#444;
+  line-height:22px;
+  background:#fff;
+  border-radius:5px;
+  position:relative;
+  box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
+  margin: 0 0 10px 0;
+  padding:15px 80px -2px 0;
+}
+
+ul.bucketlist li:last-of-type {
+  margin:0;
+}
+
+ul.bucketlist li .icons {
+  width: 100px;
+  height:50px;
+  position:absolute;
+  top:0;
+  right:0;
+
+}
+
+ul.bucketlist li .icons button {
+  width:50px;
+  height:50px;
+  float:left;
+  background:none;
+  border:0px;
+  box-shadow:none;
+  outline:none;
+  position:relative;
+
+  -webkit-appearance:none;
+ -moz-appearance:none;
+ -moz-a
+ -o-appearance:none;
+ appearance:none;
+}
+
+ul.bucketlist .icons button img {
+  width:50px;
+  height:50px;
+  position:absolute;
+  top:5px;
+  left:40%;
+  margin:-11px 0 0 -11px;
+}
+
+
+.main-footer {
+  background: #67B0D1;
+  padding: 2em 0;
+  margin-top: 30px;
+
+}
+
+/* =================================
+  Media Queries
+==================================== */
