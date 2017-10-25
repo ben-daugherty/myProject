@@ -5,18 +5,10 @@ body {
 }
 
 .content {
-display:flex;
-flex-direction:column;
   flex:1;
 }
 
 .copy {
   display:flex;
-  flex-direction:row;
-  justify-content:center;
-}
-
-.main-footer {
-  display:flex;
-  flex:0;
+  justify-content: center;
 }

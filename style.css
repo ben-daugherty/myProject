@@ -4,6 +4,11 @@ body {
   background:
   #F5F5F5;
   padding: 0;
+
+}
+
+.noFill {
+  fill:none;
 }
 
 ul {
@@ -48,8 +53,6 @@ Font Embed
 
 
 .main-header {
-top: -35px;
-
   width:100%;
 
   position:fixed;
@@ -57,11 +60,12 @@ top: -35px;
 
   z-index:5;
   box-shadow:0px 2px 4px rgba(60, 95, 136, 0.20);
-  background:#E87352;
+  background:#67B0D1;
 
   position:fixed;
   z-index:0;
   box-sizing: border-box;
+  margin-top:-35px;
 
 }
 
@@ -70,12 +74,12 @@ top: -35px;
     width: 100%;
     height: 45px;
 
-    color:#E87352;
+    color:black;
     font-size:.95em;
     font-weight: bold;
-    text-indent:30px;
+    text-indent:25px;
 
-    background: rgba(159,217,237,0.70);
+    background: rgba(234, 234, 234, 0.7);
     box-shadow:0px 2px 4px rgba(60, 95, 136, 0.20);
     margin-top: 50px;
     margin-left: auto;
@@ -127,6 +131,7 @@ header input:-ms-input-placeholder {
    background:#fff;
    border:0;
    outline:none;
+   cursor:pointer;
 
    -webkit-appearance:none;
   -moz-appearance:none;
@@ -147,9 +152,21 @@ header input:-ms-input-placeholder {
 
  }
 
+
+
  header button svg .fill {
-   fill: #9FD9ED;
+   fill: #67b0d1;
  }
+
+
+  header button:hover svg .fill {
+     fill: #e87352;
+  }
+
+  header button svg:active {
+    width: 30px;
+    height: 30px;
+}
 
 .main-nav {
   padding-top:20px;
@@ -193,9 +210,10 @@ header input:-ms-input-placeholder {
 
 
 .wrapper {
-width:90%;
-float:left;
+width:100%;
+float: left;
 padding:15px;
+box-sizing:border-box;
 
 }
 
@@ -207,18 +225,20 @@ ul.bucketlist {
 
 ul.bucketlist li {
   width:100%;
-  height:40px;
-  float:left;
+  min-height:35px;
+  float: left;
   font-size:18px;
   font-weight:bold;
   color:#444;
-  line-height:22px;
+  line-height:35px;
   background:#fff;
   border-radius:5px;
   position:relative;
   box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
   margin: 0 0 10px 0;
-  padding:15px 80px -2px 0;
+
+  text-indent:15px;
+  word-break: break-word;
 }
 
 ul.bucketlist li:last-of-type {
@@ -226,23 +246,31 @@ ul.bucketlist li:last-of-type {
 }
 
 ul.bucketlist li .icons {
-  width: 100px;
+
   height:50px;
   position:absolute;
-  top:0;
-  right:0;
+  top:-15px;
+  right:-9px;
 
 }
 
 ul.bucketlist li .icons button {
+/*
   width:50px;
   height:50px;
+  */
   float:left;
+  position:relative;
+
+
   background:none;
+
   border:0px;
   box-shadow:none;
   outline:none;
-  position:relative;
+  cursor:pointer;
+  margin-top:12px;
+  padding:0;
 
   -webkit-appearance:none;
  -moz-appearance:none;
@@ -251,15 +279,63 @@ ul.bucketlist li .icons button {
  appearance:none;
 }
 
-ul.bucketlist .icons button img {
-  width:50px;
-  height:50px;
+
+
+/*
+ul.bucketlist .icons button:last-of-type:before {
+  content:'';
+  width:1px;
+  height:30px;
   position:absolute;
-  top:5px;
-  left:40%;
-  margin:-11px 0 0 -11px;
+  top:10px;
+  left:0;
+  background:#edf0f1;
+  }
+  */
+
+  ul.bucketlist .icons button svg {
+/*
+    width:40px;
+
+    position:absolute;
+    */
+    top:50%;
+    left:50%;
+    margin:1px;
+    height:42px;
+    width:42px;
+  }
+
+
+
+ul.bucketlist #completed {
+  position: relative;
+  padding: 60px 0 0 0;
 }
 
+
+/*list fills */
+
+ul.bucketlist li .icons button.remove svg {
+  fill: #e8937b;
+}
+
+ul.bucketlist li .icons button.complete svg {
+  fill: #67b0d1;
+}
+
+
+/*Pseudo Classes*/
+
+ul.bucketlist li .icons button.remove:hover svg .fill {
+  fill: #940c0c;
+}
+
+
+ul li div button:active {
+
+    height: 60px;
+  }
 
 .main-footer {
   background: #67B0D1;
