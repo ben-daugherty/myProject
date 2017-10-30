@@ -40,30 +40,30 @@ Font Embed
   display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 70px;
   width:300px;
   height: 300px;
 
 
 }
 
-
-
-
-
-
 .main-header {
   width:100%;
-
+  height: 130px;
   position:fixed;
-  padding:15px;
+  position:fixed;
+  padding:15px 40px 0 40px;
 
+  top: 50px;
+  left: 0;
   z-index:5;
-  box-shadow:0px 2px 4px rgba(60, 95, 136, 0.20);
-  background:#67B0D1;
 
-  position:fixed;
-  z-index:0;
+
+
+
+
+
+
   box-sizing: border-box;
   margin-top:-35px;
 
@@ -73,23 +73,23 @@ Font Embed
 
     width: 100%;
     height: 45px;
-
+    float:left;
     color:black;
     font-size:.95em;
     font-weight: bold;
-    text-indent:25px;
-
+    text-indent:18px;
+    padding: 0 60px 0 10px;
     background: rgba(234, 234, 234, 0.7);
     box-shadow:0px 2px 4px rgba(60, 95, 136, 0.20);
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-
+    border:0px;
     border-radius:25px;
     border:8px;
     box-shadow:none:
     outline:none;
-    padding:0;
+
 
   -webkit-appearance:none;
  -moz-appearance:none;
@@ -124,8 +124,8 @@ header input:-ms-input-placeholder {
    width:45px;
    height:45px;
    position:absolute;
-   top:65px;
-   right:15px;
+   top:67px;
+   right:35px;
    z-index:2;
    border-radius:25px;
    background:#fff;
@@ -212,7 +212,7 @@ header input:-ms-input-placeholder {
 .wrapper {
 width:100%;
 float: left;
-padding:15px;
+padding:15px 30px 0 0;
 box-sizing:border-box;
 
 }
@@ -236,9 +236,8 @@ ul.bucketlist li {
   position:relative;
   box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
   margin: 0 0 10px 0;
-
-  text-indent:15px;
   word-break: break-word;
+  padding: 0 90px 0 23px;
 }
 
 ul.bucketlist li:last-of-type {
@@ -337,12 +336,12 @@ ul li div button:active {
     height: 60px;
   }
 
-.main-footer {
-  background: #67B0D1;
-  padding: 2em 0;
-  margin-top: 30px;
+  footer {
+    padding-top:20px;
+    display:inline-flex;
+  }
 
-}
+
 
 /* =================================
   Media Queries
