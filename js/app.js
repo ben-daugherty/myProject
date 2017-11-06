@@ -17,7 +17,9 @@ function removeItem(e) {
   let item = this.parentNode.parentNode;
   let parent = this.parentNode.parentNode.parentNode;
 
-  parent.removeChild(item);
+
+item.parentNode.removeChild(item);
+
 };
 
 

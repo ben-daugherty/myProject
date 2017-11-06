@@ -278,6 +278,13 @@ ul.bucketlist li .icons button {
  appearance:none;
 }
 
+#splash-image {
+  background-color:#3db5d7;
+  height:300px;
+
+
+}
+
 
 
 /*
@@ -340,9 +347,54 @@ ul li div button:active {
     padding-top:20px;
     display:inline-flex;
   }
+/*
+#banner{
+  height:200px;
+  background-color:#e8937b;
+}
+
+#responsive{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+*/
+.jumbotron {
+  background-image: url('images/wallpaper.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding-top:10%;
+  margin:0;
+}
+
+#why {
+  padding-top:180px;
+}
+
+#logo-png {
+
+  height:135px;
+}
+
+nav div a {
+  font-family: 'Droid Sans';
+}
+
+div.nav-bar a.nav-item nav-link {
+  font-family: 'Droid Sans';
+}
+
+
+
 
 
 
 /* =================================
   Media Queries
 ==================================== */
+
+@media (min-width: 991px)
+{
+  div #about {
+    padding-top:60px;
+  }
+}
