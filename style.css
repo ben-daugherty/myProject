@@ -234,10 +234,10 @@ ul.bucketlist li {
   background:#fff;
   border-radius:5px;
   position:relative;
-  box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
-  margin: 0 0 10px 0;
+  box-shadow: 5px 6px 6px rgba(44,62,80,0.10);
+  margin: 0 0 15px 0;
   word-break: break-word;
-  padding: 0 90px 0 23px;
+  padding: 0 145px 0 20px;
 }
 
 ul.bucketlist li:last-of-type {
@@ -249,7 +249,7 @@ ul.bucketlist li .icons {
   height:50px;
   position:absolute;
   top:-15px;
-  right:-9px;
+  right:0px;
 
 }
 
@@ -307,9 +307,9 @@ ul.bucketlist .icons button:last-of-type:before {
     */
     top:50%;
     left:50%;
-    margin:1px;
-    height:42px;
-    width:42px;
+
+    height:38px;
+    width:47px;
   }
 
 
@@ -323,19 +323,28 @@ ul.bucketlist #completed {
 /*list fills */
 
 ul.bucketlist li .icons button.remove svg {
-  fill: #e8937b;
+  fill: #d0d0d0;
 }
 
-ul.bucketlist li .icons button.complete svg {
-  fill: #67b0d1;
+ul.bucketlist li .icons button.moveUp svg {
+  fill: #d0d0d0;
+  padding-right: 3px;
 }
+
+ul.bucketlist li .icons button.moveDown svg {
+  fill: #d0d0d0;
+}
+/*
+red: q#c71313
+green: #18dea4;
+blue: #67b0d1;
+*/
 
 
 /*Pseudo Classes*/
 
 ul.bucketlist li .icons button.remove:hover svg .fill {
   fill: #940c0c;
-}
 
 
 ul li div button:active {
@@ -379,9 +388,37 @@ nav div a {
   font-family: 'Droid Sans';
 }
 
-div.nav-bar a.nav-item nav-link {
-  font-family: 'Droid Sans';
+nav div a:hover {
+  background: #fff;
 }
+
+#main-text {
+  font-family: 'Droid Sans';
+  font-weight: bold;
+  color: #68b0d1;
+}
+
+#main-text:active {
+  width: 70px;
+  height: 50px;
+}
+
+#navbarNavAltMarkup a {
+    font-family: 'Droid Sans';
+    font-weight: bold;
+    color: #fff;
+}
+
+#blue {
+
+  fill:#67b0d1;
+  padding-right:5px;
+
+}
+
+
+
+
 
 
 
@@ -396,5 +433,12 @@ div.nav-bar a.nav-item nav-link {
 {
   div #about {
     padding-top:60px;
+  }
+}
+
+@media (min- width: 991px)
+{
+  .navbar-nav {
+    padding:
   }
 }
