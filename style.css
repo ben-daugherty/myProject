@@ -93,7 +93,6 @@ Font Embed
 
   -webkit-appearance:none;
  -moz-appearance:none;
- -moz-a
  -o-appearance:none;
  appearance:none;
 }
@@ -135,7 +134,6 @@ header input:-ms-input-placeholder {
 
    -webkit-appearance:none;
   -moz-appearance:none;
-  -moz-a
   -o-appearance:none;
   appearance:none;
  }
@@ -334,17 +332,22 @@ ul.bucketlist li .icons button.moveUp svg {
 ul.bucketlist li .icons button.moveDown svg {
   fill: #d0d0d0;
 }
-/*
-red: q#c71313
-green: #18dea4;
-blue: #67b0d1;
-*/
+
 
 
 /*Pseudo Classes*/
 
 ul.bucketlist li .icons button.remove:hover svg .fill {
   fill: #940c0c;
+}
+
+ul.bucketlist li div.icons button.moveUp:hover svg .fill {
+  fill: #fff;
+}
+
+ul.bucketlist li .icons button.moveDown:hover svg .fill {
+  fill: #fff;
+}
 
 
 ul li div button:active {
@@ -380,7 +383,6 @@ ul li div button:active {
 }
 
 #logo-png {
-
   height:135px;
 }
 
@@ -388,8 +390,10 @@ nav div a {
   font-family: 'Droid Sans';
 }
 
+
 nav div a:hover {
-  background: #fff;
+  background: rgba(500, 234, 234, 0.2);
+  color: #e8937b !important;
 }
 
 #main-text {
@@ -401,6 +405,7 @@ nav div a:hover {
 #main-text:active {
   width: 70px;
   height: 50px;
+
 }
 
 #navbarNavAltMarkup a {
@@ -413,9 +418,11 @@ nav div a:hover {
 
   fill:#67b0d1;
   padding-right:5px;
-
 }
 
+.navbar-brand {
+  padding:0 10px 0 10px;
+}
 
 
 
@@ -436,9 +443,23 @@ nav div a:hover {
   }
 }
 
-@media (min- width: 991px)
+@media (min-width: 991px)
 {
   .navbar-nav {
     padding:
   }
 }
+
+@media (min-width: 991px)
+{
+  header.main-header {
+
+    padding: 15px 140px 0 140px;
+  }
+  }
+  @media (min-width: 991px)
+  {
+    #add {
+    right:132px;
+    }
+  }
