@@ -318,11 +318,7 @@ nav div a:hover {
   color: #68b0d1;
 }
 
-#main-text:active {
-  width: 70px;
-  height: 50px;
 
-}
 
 #navbarNavAltMarkup a {
     font-family: 'Droid Sans';
@@ -435,5 +431,11 @@ Media Queries
   {
     #colContent {
       margin-bottom:3rem !important;
+    }
+  }
+  @media (max-width: 750px)
+  {
+    .navbar-brand {
+      padding:0 !important;
     }
   }
