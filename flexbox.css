@@ -13,4 +13,6 @@ footer {
     align-items: center;
     margin: auto;
     padding:25px;
+    margin-bottom: 0;
+    margin-top:0;
 }

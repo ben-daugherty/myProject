@@ -4,7 +4,6 @@ body {
   background:
   #F5F5F5;
   padding: 0;
-
 }
 
 .noFill {
@@ -24,15 +23,7 @@ ul li {
   font-family: 'Droid Sans';
 }
 
-
-/*=============================
-Font Embed
-=============================*/
-
-
-
-
- body,input,button, .main-nav {
+body,input,button, .main-nav {
    font-family: 'Droid Sans', sans-serif;
  }
 
@@ -40,37 +31,22 @@ Font Embed
   display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
+    position:relative;
   width:300px;
   height: 300px;
-
-
+  z-index: -1;
 }
 
 .main-header {
   width:100%;
   height: 130px;
-  position:fixed;
-  position:fixed;
-  padding:15px 40px 0 40px;
-
-  top: 50px;
-  left: 0;
+  padding:15px 40px 0 40px;left: 0;
   z-index:5;
-
-
-
-
-
-
-
   box-sizing: border-box;
-  margin-top:-35px;
-
+  margin-top:-80px;
 }
 
   header input {
-
     width: 100%;
     height: 45px;
     float:left;
@@ -81,7 +57,6 @@ Font Embed
     padding: 0 60px 0 10px;
     background: rgba(234, 234, 234, 0.7);
     box-shadow:0px 2px 4px rgba(60, 95, 136, 0.20);
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     border:0px;
@@ -89,10 +64,10 @@ Font Embed
     border:8px;
     box-shadow:none:
     outline:none;
-
-
-  -webkit-appearance:none;
+    z-index:5;
+-webkit-appearance:none;
  -moz-appearance:none;
+ -moz-a
  -o-appearance:none;
  appearance:none;
 }
@@ -116,14 +91,10 @@ header input:-ms-input-placeholder {
     color:rgba(232,115,82,0.50);
 }
 
-
-
-
- header button {
+header button {
    width:45px;
    height:45px;
    position:absolute;
-   top:67px;
    right:35px;
    z-index:2;
    border-radius:25px;
@@ -134,6 +105,7 @@ header input:-ms-input-placeholder {
 
    -webkit-appearance:none;
   -moz-appearance:none;
+  -moz-a
   -o-appearance:none;
   appearance:none;
  }
@@ -150,9 +122,7 @@ header input:-ms-input-placeholder {
 
  }
 
-
-
- header button svg .fill {
+header button svg .fill {
    fill: #67b0d1;
  }
 
@@ -172,7 +142,6 @@ header input:-ms-input-placeholder {
   margin-top:34px;
 
 }
-
 
 .main-nav a {
 	text-align: center;
@@ -206,15 +175,14 @@ header input:-ms-input-placeholder {
 
 }
 
-
 .wrapper {
 width:100%;
 float: left;
 padding:15px 30px 0 0;
 box-sizing:border-box;
+margin-top: 60px;
 
 }
-
 
 ul.bucketlist {
   width:100%;
@@ -258,10 +226,7 @@ ul.bucketlist li .icons button {
   */
   float:left;
   position:relative;
-
-
   background:none;
-
   border:0px;
   box-shadow:none;
   outline:none;
@@ -269,10 +234,9 @@ ul.bucketlist li .icons button {
   margin-top:12px;
   padding:0;
 
-  -webkit-appearance:none;
+-webkit-appearance:none;
  -moz-appearance:none;
- -moz-a
- -o-appearance:none;
+-o-appearance:none;
  appearance:none;
 }
 
@@ -280,29 +244,9 @@ ul.bucketlist li .icons button {
   background-color:#3db5d7;
   height:300px;
 
-
 }
 
-
-
-/*
-ul.bucketlist .icons button:last-of-type:before {
-  content:'';
-  width:1px;
-  height:30px;
-  position:absolute;
-  top:10px;
-  left:0;
-  background:#edf0f1;
-  }
-  */
-
   ul.bucketlist .icons button svg {
-/*
-    width:40px;
-
-    position:absolute;
-    */
     top:50%;
     left:50%;
 
@@ -310,13 +254,10 @@ ul.bucketlist .icons button:last-of-type:before {
     width:47px;
   }
 
-
-
 ul.bucketlist #completed {
   position: relative;
   padding: 60px 0 0 0;
 }
-
 
 /*list fills */
 
@@ -333,22 +274,7 @@ ul.bucketlist li .icons button.moveDown svg {
   fill: #d0d0d0;
 }
 
-
-
 /*Pseudo Classes*/
-
-ul.bucketlist li .icons button.remove:hover svg .fill {
-  fill: #940c0c;
-}
-
-ul.bucketlist li div.icons button.moveUp:hover svg .fill {
-  fill: #fff;
-}
-
-ul.bucketlist li .icons button.moveDown:hover svg .fill {
-  fill: #fff;
-}
-
 
 ul li div button:active {
 
@@ -358,18 +284,9 @@ ul li div button:active {
   footer {
     padding-top:20px;
     display:inline-flex;
+    margin-top:0;
   }
-/*
-#banner{
-  height:200px;
-  background-color:#e8937b;
-}
 
-#responsive{
-  padding-right: 20px;
-  padding-left: 20px;
-}
-*/
 .jumbotron {
   background-image: url('images/wallpaper.jpg');
   background-size:cover;
@@ -389,7 +306,6 @@ ul li div button:active {
 nav div a {
   font-family: 'Droid Sans';
 }
-
 
 nav div a:hover {
   background: rgba(500, 234, 234, 0.2);
@@ -425,13 +341,46 @@ nav div a:hover {
 }
 
 
+ul.bucketlist li .icons button.moveUp:hover svg {
+  fill: #31f9b4;
+  padding-bottom:8px;
+}
 
+ul.bucketlist li .icons button.moveDown:hover svg {
+  fill: #67b0d1;
+  padding-top:8px;
+}
 
+ul.bucketlist li .icons button.remove:hover svg {
+  fill: #c32433;
+  animation: rattle 1s;
+  animation-iteration-count:infinite;
 
+}
+  @keyframes rattle {
+  10%, 20%, 60%, 90% {
+  transform: translate(4px, 4px) rotate(0deg)
+  }
 
+  10%, 40%, 70%, 100% {
+  transform: translate(-4px, -4px) rotate(-10deg)
+  }
 
+  20%, 50%, 80% {
+  transform: translate(-8px, 2px) rotate(-12deg)
+  }
+}
 
+#submitButton {
+  width:10rem;
+}
 
+#headline {
+  color:#278ab7;
+}
+
+/*===================================
+Media Queries
 /* =================================
   Media Queries
 ==================================== */
@@ -461,5 +410,30 @@ nav div a:hover {
   {
     #add {
     right:132px;
+    }
+  }
+  @media (min-width: 991px)
+  {
+    div.wrapper {
+    padding: 15px 60px 0 40px;
+    }
+  }
+  @media (max-width: 991px)
+  {
+    div p.lead {
+      margin-top: 80px !important;
+      margin-bottom: 40px !important;
+    }
+  }
+  @media (max-width: 991px)
+  {
+    #submitButton {
+      width:20rem !important;
+    }
+  }
+  @media (max-width: 991px)
+  {
+    #colContent {
+      margin-bottom:3rem !important;
     }
   }
